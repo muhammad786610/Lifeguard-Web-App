@@ -5,11 +5,8 @@ import random
 import smtplib
 from email.message import EmailMessage
 import sqlite3
-import datetime
-import csv
-import matplotlib.pyplot as plt
 import hashlib
-
+from st_circular_progress import CircularProgress
 #Creating my database class
 class Database:
     def __init__(self):
@@ -704,7 +701,6 @@ class main_menu_page(navigation_bar):
         Progress_container = st.container(border=True)
         Progress_container.write(self.progress)
         #Adding my circular progress bars to show the user's progress in each section
-        from st_circular_progress import CircularProgress
         progress_column1, progress_column2, progress_column3 = st.columns(3)
         with progress_column1:
             section1_progress = CircularProgress(
