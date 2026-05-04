@@ -6,6 +6,7 @@ import smtplib
 from email.message import EmailMessage
 import sqlite3
 import hashlib
+import psycopg2
 from st_circular_progress import CircularProgress
 #Creating my database class
 class Database:
