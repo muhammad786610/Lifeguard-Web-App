@@ -27,7 +27,7 @@ class Database:
                        role TEXT,
                        duty_manager_email TEXT,
                        rankings_status INTEGER,
-                       dm_results_status INTERGER)''')
+                       dm_results_status INTEGER)''')
         self.connection.commit()
 
     #Creating a method to add my user details
