@@ -542,6 +542,7 @@ class login_page:
                             st.session_state.user_id = user[0]  
                             st.session_state.name = user[1]
                             st.session_state.page = "Main Menu"
+                            db.create_missing_user_progress_rows(st.session_state.user_id)
                             st.rerun()
                     else:
                         #Validation construct if the user does not exist
